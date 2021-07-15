@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="calcstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="calculator">
+        <h1>FreeHold SDLT Calculator</h1>
+        <h3 class="subheader">What will the price increase mean for you?</h3>
+
+        We have made some assumptions including:
+        <ul>
+            <li>You are not a corporate body</li>
+            <li>You are not buying 6 or more residential properties in one transaction</li>
+            <li>This is not a shared ownership property</li>
+            <li>There are not multiple purchases or transfers between the same parties</li>
+            <li>This purchase will not mean you own more than one property</li>
+            <li>You are not a company or trust buying more than one property</li>
+        </ul>
+        <form>
+            <label for="entervalue">Enter your purchase price:</label>
+            <input type="number" id="enterValue"></input>
+            <p></p><input type="button" name="submit",id="buttonSubmit" value="Calculate SDLT" onclick="callAllCalcs()" class="favorite styled"></input>
+        </form>
+        <h3 id="julToSept"></h3>
+        <h3 id="fromOct"></h3>
+        </div>
+        <script src="calc.js"></script>
+    </body>
+</html>
